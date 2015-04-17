@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    	<meta charset="UTF-8">
+    	<title>Каталог</title>
+    </head>
+    <body>
+
+        <header class="page-header">
+            <div class="page-header__inner container">
+                <a href="" class="main-logo"><img src="" alt="MOTOR_&_BOAT"></a>
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a href="">О компании</a></li>
+                        <li class="main-nav__item"><a href="">Акции</a></li>
+                        <li class="main-nav__item"><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-contacts">
+                    <span class="contacts-phone">+7 <span class="contacts-phone__code">(812)</span> 312-23-00 Серовский пер., д.12, оф. 143</span>
+                </div>
+            </div>
+        </header>
+        <main class="page-katalog">
+            <div class="breadcrumbs">
+                <span><a href="#">Каталог</a></span><span><a href="#">Пластиковые лодки</a></span><span><a href="#">Beavertrail</a></span>
+            </div>
+            <section class="filters">
+                <div class="filters-container">
+                    <form action="/echo" method="post">
+                        <div class="category-filter">
+                            <label for="form-category"><span>Категория</span></label>
+                            <select name="select-category" id="form-category">
+                                <option value="">Пластиковые лотки</option>
+                                <option value="">Резиновые лотки</option>
+                                <option value="">Моторы</option>
+                                <option value="">Аксессуары</option>
+                                <option value="">Дополнительные услуги</option>
+                            </select>
+                            <label for="form-brend"><span>Бренд</span></label>
+                            <select name="select-category" id="form-brend">
+                                <option value="">Beavertrail</option>
+                                <option value="">LAKER</option>
+                                <option value="">Nissamaran</option>
+                                <option value="">SAVA</option>
+                                <option value="">SCANDIC</option>
+                                <option value="">Афалина</option>
+                                <option value="">Шарк</option>
+                            </select>
+                        </div>
+                        <div class="price-filter">
+                            <label for="price-from"><span>Цена от</span></label>
+                            <input type="text" value="2450" id="price-from">
+                            <label for="price-to">до</label>
+                            <input type="text" value="212 760" id="price-to">
+                        </div>
+                        <div class="other-filter">
+                            <span>Вместимость</span>
+                            <input type="checkbox" id="capacity-1"><label for="capacity-1">1 чел</label>
+                            <input type="checkbox" id="capacity-3"><label for="capacity-3">до 3 чел</label>
+                            <input type="checkbox" id="capacity-6" checked><label for="capacity-6">до 6 чел</label>
+                            <input type="checkbox" id="form-motor">
+                            <label for="form-motor">Подобрать мотор</label>
+                        </div>
+                        <a href="#">Показать больше параметров</a>
+                    </form>
+                </div>
+                <!-- end filtres-container-->
+            </section>
+            <!--end section filters-->
+            <section class="products-katalog">
+                <div class="products-katalog-container">
+                    <div class="form-sort">
+                        <form action="/echo" method="post">
+                            <span>Сортировать по</span>
+                            <label for="sort-by-price">Цене</label>
+                            <input type="checkbox" id="sort-by-price">
+                            <label for="sort-by-brend">Бренду</label>
+                            <input type="checkbox" id="sort-by-brend">
+                            <label for="sort-by-name">Названию</label>
+                            <input type="checkbox" id="sort-by-name">
+                        </form>
+                    </div>
+                    <article class="product-card-catalog">
+                        <a class="product-card-catalog__img-link" href="#">
+                            <img src="" alt=""/>
+                        </a>
+                        <div class="product-card-catalog__text">
+                            <h1 class="product-card-catalog__name"><a href="#">Пластиковая лодка Nissamora R-2310</a></h1>
+                            <p class="product-card-catalog__descript">Длина: 260 см</p>
+                            <p class="product-card-catalog__descript">Грузоподъемность: 218 кг</p>
+                            <p class="product-card-catalog__descript">Вместимость: до 6 человек</p>
+                            <p class="product-card-catalog__descript">Ширина: 121 см</p>
+                            <p class="product-card-catalog__descript">Страна: Россия</p>
+                            <div class="product-card-catalog__price">12 990 Р</div>
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </article>
+                    <article class="product-card-catalog">
+                        <a class="product-card-catalog__img-link" href="#">
+                            <img src="" alt=""/>
+                        </a>
+                        <div class="product-card-catalog__text">
+                            <h1 class="product-card-catalog__name"><a href="#">Пластиковая лодка RIB WIRBOAT R-53</a></h1>
+                            <p class="product-card-catalog__descript">Длина: 220 см</p>
+                            <p class="product-card-catalog__descript">Грузоподъемность: 18 кг</p>
+                            <p class="product-card-catalog__descript">Вместимость: до 2 человек</p>
+                            <p class="product-card-catalog__descript">Ширина: 90 см</p>
+                            <p class="product-card-catalog__descript">Страна: Россия</p>
+                            <div class="product-card-catalog__price">43 300 Р</div>
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </article>
+                    <article class="product-card-catalog">
+                        <a class="product-card-catalog__img-link" href="#">
+                            <img src="" alt=""/>
+                        </a>
+                        <div class="product-card-catalog__text">
+                            <h1 class="product-card-catalog__name"><a href="#">Пластиковая лодка Адмирал 12-с</a></h1>
+                            <p class="product-card-catalog__descript">Длина: 210 см</p>
+                            <p class="product-card-catalog__descript">Грузоподъемность: 230 кг</p>
+                            <p class="product-card-catalog__descript">Вместимость: до 6 человек</p>
+                            <p class="product-card-catalog__descript">Ширина: 121 см</p>
+                            <p class="product-card-catalog__descript">Страна: Россия</p>
+                            <div class="product-card-catalog__price">8 990 Р</div>
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </article>
+                    <article class="product-card-catalog">
+                        <a class="product-card-catalog__img-link" href="#">
+                            <img src="" alt=""/>
+                        </a>
+                        <div class="product-card-catalog__text">
+                            <h1 class="product-card-catalog__name"><a href="#">Пластиковая лодка fishhanter hf 280</a></h1>
+                            <p class="product-card-catalog__descript">Длина: 260 см</p>
+                            <p class="product-card-catalog__descript">Грузоподъемность: 218 кг</p>
+                            <p class="product-card-catalog__descript">Вместимость: до 6 человек</p>
+                            <p class="product-card-catalog__descript">Ширина: 121 см</p>
+                            <p class="product-card-catalog__descript">Страна: Россия</p>
+                            <div class="product-card-catalog__price">7 990 Р</div>
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </article>
+                    <article class="product-card-catalog">
+                        <a class="product-card-catalog__img-link" href="#">
+                            <img src="" alt=""/>
+                        </a>
+                        <div class="product-card-catalog__text">
+                            <h1 class="product-card-catalog__name"><a href="#">Пластиковая лодка Hib winboat  R10</a></h1>
+                            <p class="product-card-catalog__descript">Длина: 260 см</p>
+                            <p class="product-card-catalog__descript">Грузоподъемность: 218 кг</p>
+                            <p class="product-card-catalog__descript">Вместимость: до 6 человек</p>
+                            <p class="product-card-catalog__descript">Ширина: 121 см</p>
+                            <p class="product-card-catalog__descript">Страна: Россия</p>
+                            <div class="product-card-catalog__price">32 990 Р</div>
+                            <a href="#" class="button">Купить</a>
+                        </div>
+                    </article>
+                </div>
+                <!--end products-katalog-container-->
+            </section>
+            <!-- end products-katalog-->
+        </main>
+        <!--end main content-->
+        <footer>
+            <div class="footer container">
+                <section class="footer-contacts">
+                    <div class="all-contacts">
+                        <div class="section-title section-title--white">Как нас найти</div>
+                        <div class="all-contacts__text">
+                            <p class="all-contacts__address">171 234, г.Санкт-Петербург Серовский пер,д 12,оф 143</p>
+                            <p class="all-contacts__operation-time">Мы работаем с 9:00 до 23:00 без обеда и выходных</p>
+                            <span class="contacts-phone">+7 <span class="contacts-phone__code">(812)</span> 312-23-00</span>
+                            <button class="button button--call-back"><a href="#">Заказать обратный звонок</a></button>
+                        </div>
+                    </div>
+                    <div class="footer-contacts__maps">
+                        <img src="#" alt="Maps"/>
+                    </div>
+                    <div class="clearfix"></div>
+                </section>
+            </div>
+        </footer>
+
+    </body>
+</html>
